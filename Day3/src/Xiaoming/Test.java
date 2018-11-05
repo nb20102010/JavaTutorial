@@ -1,4 +1,5 @@
 package Xiaoming;
+import Xiaoqiang.Cat;
 
 public class Test {
 
@@ -7,12 +8,20 @@ public class Test {
 	}
 	
 	public static void main(String[] args){
-		
+		Cat cat1 = new Cat();
+		Dog dog1 = new Dog();
+		System.out.println(dog1.getName());
 	}
 	
 }
 
 
-class Dog{
+class Dog extends Xiaoqiang.Cat{
+	{
+		this.name = "dg";
+	}
 	
+	public String getName(){
+		return this.name;
+	}
 }
