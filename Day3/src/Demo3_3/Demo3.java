@@ -14,7 +14,7 @@ public class Demo3 {
 }
 
 class Animal{
-	public void cry(){
+	protected void cry(){
 		System.out.println("I dont know how to cry");
 	}
 }
