@@ -11,23 +11,34 @@ public class Demo5_3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int len = 100;
-		int[] arr = new int[len];
-		for(int i = 0; i < len; i++){
-			arr[i] = (int)(Math.random() * 10000);
-		}
-		System.out.println(Arrays.toString(arr));
-		Calendar cal = Calendar.getInstance();
-		System.out.println(cal.getTimeInMillis());
-		Bubble.sort(arr);
-		cal = Calendar.getInstance();
-		System.out.println(cal.getTimeInMillis());
-		System.out.println(Arrays.toString(arr));
 		
+		System.out.println("Bubble Sort");
+		int[] arr1 = {8,3,2,1,4,6,5,7};
+		System.out.println(Arrays.toString(arr1));
+		Bubble.sort(arr1);
+		System.out.println(Arrays.toString(arr1));
+		
+		System.out.println("Select Sort");
 		int[] arr2 = {8,3,2,1,4,6,5,7};
 		System.out.println(Arrays.toString(arr2));
 		Select.sort(arr2);
 		System.out.println(Arrays.toString(arr2));
+		
+		System.out.println("Insert Sort");
+		int[] arr3 = {8,3,2,1,4,6,5,7};
+		System.out.println(Arrays.toString(arr3));
+		Insert.sort(arr3);
+		System.out.println(Arrays.toString(arr3));
+		
+		System.out.println("Quick Sort");
+		int[] arr4 = {8,3,2,1,4,6,5,7};
+		System.out.println(Arrays.toString(arr4));
+		QuickSort.sort(arr4, 0, arr4.length-1);
+		System.out.println(Arrays.toString(arr4));
+		
+		byte b = -127;
+		b = (byte) (b << 1);
+		System.out.println(b);
 	}
 
 }
