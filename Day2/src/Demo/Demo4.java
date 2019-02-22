@@ -1,8 +1,5 @@
 package Demo;
 
-import com.sun.jndi.url.dns.dnsURLContext;
-import com.sun.swing.internal.plaf.metal.resources.metal_zh_TW;
-
 public class Demo4 {
 	
 	public static void main(String[] args){

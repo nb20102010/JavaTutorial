@@ -20,7 +20,7 @@ public class MyClient1 {
 			
 			String response = br.readLine();
 			System.out.println("I am client, I got " + response + " from server");
-			
+			s.close();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
