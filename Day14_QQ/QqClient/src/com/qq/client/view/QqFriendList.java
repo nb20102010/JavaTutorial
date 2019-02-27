@@ -116,6 +116,7 @@ public class QqFriendList extends JFrame implements ActionListener, MouseListene
 		if(e.getClickCount() == 2) {
 			String friendNum = ((JLabel)e.getSource()).getText();
 			System.out.println("You want to speak with " + friendNum);
+			new QqChat(friendNum);
 		}
 	}
 
